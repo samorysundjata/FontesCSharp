@@ -1,0 +1,15 @@
+@startuml Context
+
+title Diagrama de Contexto - Sistema de Cadastro de Fontes Científicas
+
+actor Usuario as User
+
+package "Sistema de Cadastro de Fontes Científicas" {
+  [API de Cadastro de Fontes] as API
+  [Banco de Dados NoSQL MongoDB] as DB
+}
+
+User --> API : Utiliza
+API --> DB : Persiste dados
+
+@enduml

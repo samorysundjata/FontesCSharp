@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontesCSharp.API", "src\Fon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontesCSharp.Core", "src\FontesCSharp.Core\FontesCSharp.Core.csproj", "{E61F6F0D-157D-4053-97E5-701E0BBD0A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontesCSharp.Tests", "tests\FontesCSharp.Tests\FontesCSharp.Tests.csproj", "{CCD54464-3D72-43BC-88A0-6A3D65F846C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontesCSharp.Tests", "tests\FontesCSharp.Tests\FontesCSharp.Tests.csproj", "{CCD54464-3D72-43BC-88A0-6A3D65F846C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontesCSharp.Infra", "src\FontesCSharp.Infra\FontesCSharp.Infra.csproj", "{70F13575-A038-4F29-94AE-2CC88DC84EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CCD54464-3D72-43BC-88A0-6A3D65F846C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD54464-3D72-43BC-88A0-6A3D65F846C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD54464-3D72-43BC-88A0-6A3D65F846C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F13575-A038-4F29-94AE-2CC88DC84EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F13575-A038-4F29-94AE-2CC88DC84EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F13575-A038-4F29-94AE-2CC88DC84EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F13575-A038-4F29-94AE-2CC88DC84EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
