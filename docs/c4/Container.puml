@@ -1,0 +1,14 @@
+@startuml FontesContainer
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(pesquisadora, "Pesquisadora", "Pesquisadora que interage com o sistema")
+System(sistemaFontes, "Sistema de Fontes Científicas", "Sistema que gerencia fontes científicas")
+
+Container(api, "API de Cadastro de Fontes", "API de Cadastro de Fontes")
+Container(db, "Banco de Dados NoSQL MongoDB", "Banco de Dados NoSQL MongoDB")
+
+Rel(pesquisadora, sistemaFontes, "Gerencia")
+Rel(sistemaFontes, api, "Utiliza")
+Rel(api, db, "Persiste dados")
+
+@enduml

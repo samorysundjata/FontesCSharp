@@ -1,15 +1,21 @@
-@startuml Context
+@startuml FontesContext
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
-title Diagrama de Contexto - Sistema de Cadastro de Fontes Científicas
+Person(pesquisadora, "Pesquisadora", "Pesquisadora que interage com o sistema")
+System(sistemaFontes, "Sistema de Fontes Científicas", "Sistema que gerencia fontes científicas")
 
-actor Usuario as User
 
-package "Sistema de Cadastro de Fontes Científicas" {
-  [API de Cadastro de Fontes] as API
-  [Banco de Dados NoSQL MongoDB] as DB
-}
+Rel(pesquisadora, sistemaFontes, "Gerencia")
+' title Diagrama de Contexto - Sistema de Cadastro de Fontes Científicas
 
-User --> API : Utiliza
-API --> DB : Persiste dados
+' actor Usuario as User
+
+' package "Sistema de Cadastro de Fontes Científicas" {
+'   [API de Cadastro de Fontes] as API
+'   [Banco de Dados NoSQL MongoDB] as DB
+' }
+
+' User --> API : Utiliza
+' API --> DB : Persiste dados
 
 @enduml
